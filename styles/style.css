@@ -149,7 +149,8 @@ strong {
         display: flex;
         padding-top: 4%;
         padding-left: 33%;
-        gap: 5%;
+        gap: 5%
+        justify-content: center;
     }
     
     .menu__item {
