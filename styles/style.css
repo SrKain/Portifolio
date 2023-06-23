@@ -155,7 +155,7 @@ strong {
 /*cv*/
 
 .cv__main{
-margin: 2%;
+padding: 1%;
 display: grid;
 grid-template-columns: 1fr 2fr 2fr;
 }
@@ -163,6 +163,7 @@ grid-template-columns: 1fr 2fr 2fr;
 .cv__img__container {
     display: flex;
     width: 100%;
+    margin-left: 0px;
 }
 
 .cv__img {
@@ -183,7 +184,7 @@ grid-template-columns: 1fr 2fr 2fr;
 }
 
 .cv__block {
-    margin: 2%;
+    padding: 10%;
 }
 
 
