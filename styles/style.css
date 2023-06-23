@@ -184,10 +184,6 @@ grid-template-columns: 1fr 2fr 2fr;
     font-family: 'Montserrat', sans-serif;
 }
 
-.cv__block {
-}
-
-
 @media ( max-width: 750px) {
 
     .menu {
