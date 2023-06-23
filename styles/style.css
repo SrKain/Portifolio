@@ -162,13 +162,14 @@ grid-template-columns: 1fr 2fr 2fr;
 
 .cv__img__container {
     display: flex;
-    width: 100%;
+    width: 90%;
     margin-left: 0px;
+    padding: 10%;
+    padding-top: 3%;
 }
 
 .cv__img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
 }
 
 .cv__title {
@@ -184,7 +185,6 @@ grid-template-columns: 1fr 2fr 2fr;
 }
 
 .cv__block {
-    padding: 10%;
 }
 
 
