@@ -95,6 +95,7 @@ strong {
 }
 
 .presentation__text__links__link {  
+    transition: all 0.2s;
     font-size: var(--font__size__tirdy);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -124,6 +125,7 @@ strong {
 }
 
 .presentation__text__links__link:hover{
+    transition: all 0.2s;
     background-color: var(--hover__color);
     font-weight: bolder;
     width: 68%;
@@ -145,7 +147,6 @@ strong {
 .rodape{
     background-color: var(--tirdy__color);
     color: var(--main__color);
-    justify-content:center;
     font-family: 'montSerrat', sans-serif;
     font-weight: 700;
     padding: 20px;
@@ -179,10 +180,35 @@ grid-template-columns: 1fr 2fr 2fr;
     font-size: 2.2rem;
 }
 
-.cv__p {
+.cv__p{
+    width: fit-content;
     color: #F6F6F6;
     font-size: 1.3rem;   
     font-family: 'Montserrat', sans-serif;
+}
+
+.cv__block{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.cv__a {
+    width: fit-content;
+    transition: all 0.2s;
+    color: #F6F6F6;
+    font-size: 1.3rem;   
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cv__a:hover{
+    background-color: var(--hover__color);
+    transition: all 0.2s;
+    font-size: 1.8rem;
+    padding: 0.3%;
+    margin: 0.25%;
+    border-radius: 8px;
+    border: 0.2px solid var(--tirdy__color);
 }
 
 @media ( max-width: 750px) {
