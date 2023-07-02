@@ -138,7 +138,7 @@ strong {
 
 .imgg{
     margin: 2%;
-    width: 100%;   
+    width: 98%;   
     height: auto;
 }
 
@@ -162,6 +162,7 @@ grid-template-columns: 1fr 2fr 2fr;
 
 .cv__img__container {
     display: flex;
+    margin: 10%;
     width: 90%;
     margin-left: 0px;
     padding: 10%;
