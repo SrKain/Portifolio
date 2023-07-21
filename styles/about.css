@@ -1,7 +1,7 @@
 .presentation {
     box-sizing: border-box;
     display: flex;
-    align-items: star;
+    align-items: center;
     padding: 8%;
     justify-content: space-evenly;
     padding-top: 5%;
@@ -96,16 +96,24 @@
 }
 
 @media (max-width: 750px) {
-    
+
     .presentation {
         flex-direction: column-reverse;
         padding: 1%;
-        width: 87%;
+        padding-left: 5%;
+        margin: 0;
+        width: 90vw;
+        margin-bottom: 5vh;
+        align-items: center;
     }
 
     .presentation__text {
         width: 100%;
-        margin: 0% 0% 0% 30%;
+        padding: 0% 5% 0% 5%;
+    }
+
+    .presentation__text__1 {
+        text-align: center;
     }
 
     .presentation__img {
