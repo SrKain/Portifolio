@@ -1,0 +1,118 @@
+.presentation {
+    box-sizing: border-box;
+    display: flex;
+    align-items: star;
+    padding: 8%;
+    justify-content: space-evenly;
+    padding-top: 5%;
+}
+
+.presentation__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: auto;
+}
+
+.presentation__text__1 {
+    margin: 3%;
+    font-size: var(--font__size__primary);
+    font-family: 'Krona One', sans-serif;
+}
+
+.presentation__text__2 {
+    margin: 3%;
+    font-size: var(--font__size__secundary);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.presentation__text__links {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.presentation__text__links__text {
+    font-size: var(--font__size__tirdy);
+    font-family: 'Krona One', sans-serif;
+    font-weight: 100;
+}
+
+.presentation__text__links__link {
+    transition: all 0.2s;
+    font-size: var(--font__size__tirdy);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--secundary__color);
+    padding: 2.5%;
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    border-radius: 8px;
+    border: 2px solid var(--tirdy__color__variant);
+    align-items: center;
+}
+
+.presentation__text__links__link__icon__insta {
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    height: 80%;
+    margin: 1%;
+}
+
+.presentation__text__links__link__icon__whats {
+    display: flex;
+    justify-content: center;
+    width: 8%;
+    margin: 1%;
+    height: 80%;
+}
+
+.presentation__text__links__link:hover {
+    transition: all 0.2s;
+    background-color: var(--hover__color);
+    font-weight: bolder;
+    width: 68%;
+}
+
+.presentation__img {
+    width: 40%;
+    height: auto;
+    align-items: top;
+    justify-content: start;
+}
+
+.imgg {
+    margin: 2%;
+    width: 98%;
+    height: auto;
+}
+
+@media (max-width: 750px) {
+    
+    .presentation {
+        flex-direction: column-reverse;
+        padding: 1%;
+        width: 87%;
+    }
+
+    .presentation__text {
+        width: 100%;
+        margin: 0% 0% 0% 30%;
+    }
+
+    .presentation__img {
+        width: 65%;
+    }
+
+    .imgg {
+        width: 100%;
+    }
+}

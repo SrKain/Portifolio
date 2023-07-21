@@ -1,43 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <link rel="stylesheet" href="./styles/style.css">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sobre mim</title>
-    </head>
 
-    <body>
+<head>
+    <meta name="descripton"
+        content="Página descritiva sobre Kauan Iasin, um desenvolvedor front-end especialista em HTML, CSS e react.">
+    <link rel="stylesheet" href="/styles/about.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+</head>
 
-        <header>
-            <nav class="menu">
-                <a class="menu__item" href="index.html" >Home</a>
-                <a class="menu__item" href="about.html">Sobre mim</a>
-                <a class="menu__item" href="cv.html">Meu Portifólio</a>
+<body id="body1">
+
+    <header id="header">
+
+        <section class="logo__container">
+            <a class="logo__container__anchor" href="index.html">
+                <img class="logo__img" src="/assets/logo.png" alt="logo Kauan Iasin desenvolvedor front-end">
+            </a>
+        </section>
+
+        <section id="navContainer" class="nav__container">
+
+            <button id="navButton" class="nav__button" onclick="clickMenu()">
+                <img class="nav__icon" src="/assets/menu_FILL0_wght400_GRAD200_opsz20.webp">
+            </button>
+
+            <nav id="navList" class="nav__list">
+                <a class="nav__item" href="index.html">Home</a>
+                <a class="nav__item" href="about.html">Sobre Mim</a>
+                <a class="nav__item" href="cv.html">Meu Portifólio</a>
             </nav>
-        </header>
 
-        <main class="presentation">
+        </section>
 
-            <div class="presentation__text">
+        <script>
+            function clickMenu() {
+                if (navList.style.display == 'flex') {
+                    navList.style.display = 'none';
+                    header.style.height = '15vh';
+                    navButton.style.height = '25%';
+                }
+                else {
+                    navList.style.display = 'flex';
+                    header.style.height = '25vh';
+                    navButton.style.height = '15%';
+                }
+            }
+        </script>
 
-                <h1 class="presentation__text__1">Sou <strong>Kauan Iasin</strong>, especialista em <strong>CSS, HTML e REACT</strong></h1>
-                <p class="presentation__text__2">Desde sempre fui apaixonado por tecnologia e internet, sempre vi em mim a vocação para trabalhar dentro dessa área! <br> Então, decidi estudar mais fundo e me tornar um verdadeiro desenvolvedor para que assim, eu pudesse dar incio a minha carreira. <br> Agora, busco algumas oportunidades de colocar os meus conhecimentos e talentos em prática.<br><strong>Que tal conversamos sobre?</strong></p>
+    </header>
 
-            </div>
 
-            <section class="presentation__img">
+    <main class="presentation">
 
-                <img class="imgg" src="assets/kauanimg.jpeg" alt="foto de perfil kauan">
+        <div class="presentation__text">
 
-            </section>
-        </main>
+            <h1 class="presentation__text__1">Sou <strong>Kauan Iasin</strong>, especialista em <strong>CSS, HTML e
+                    REACT</strong></h1>
+            <p class="presentation__text__2">Desde sempre fui apaixonado por tecnologia e internet, sempre vi em mim a
+                vocação para trabalhar dentro dessa área! <br> Então, decidi estudar mais fundo e me tornar um
+                verdadeiro desenvolvedor para que assim, eu pudesse dar incio a minha carreira. <br> Agora, busco
+                algumas oportunidades de colocar os meus conhecimentos e talentos em prática.<br><strong>Que tal
+                    conversamos sobre?</strong></p>
 
-        <footer class="rodape">
-            <p>Desenvolvido por Kauan Iasin.
-            </p>
-        </footer>
+        </div>
 
-    </body>
+        <section class="presentation__img">
+
+            <img class="imgg" src="assets/kauanimg.jpeg" alt="foto de perfil kauan">
+
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Kauan Iasin.
+        </p>
+    </footer>
+
+</body>
+
 </html>

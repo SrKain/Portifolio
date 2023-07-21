@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="stylesheet" href="/styles/index.css">
     <link rel="stylesheet" href="./styles/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +11,45 @@
 </head>
 
 <body>
-    <header>
-        <nav class="menu">
-            <a class="menu__item" href="index.html">Home</a>
-            <a class="menu__item" href="about.html">Sobre mim</a>
-            <a class="menu__item" href="cv.html">Meu Portifólio</a>
-        </nav>
+    <header id="header">
+
+        <section class="logo__container">
+            <a class="logo__container__anchor" href="index.html">
+                <img class="logo__img" src="/assets/logo.png" alt="logo Kauan Iasin desenvolvedor front-end">
+            </a>
+        </section>
+
+        <section id="navContainer" class="nav__container">
+
+            <button id="navButton" class="nav__button" onclick="clickMenu()">
+                <img class="nav__icon" src="/assets/menu_FILL0_wght400_GRAD200_opsz20.webp">
+            </button>
+
+            <nav id="navList" class="nav__list">
+                <a class="nav__item" href="index.html">Home</a>
+                <a class="nav__item" href="about.html">Sobre Mim</a>
+                <a class="nav__item" href="cv.html">Meu Portifólio</a>
+            </nav>
+
+        </section>
+
+        <script>
+            function clickMenu() {
+                if (navList.style.display == 'flex') {
+                    navList.style.display = 'none';
+                    header.style.height = '15vh';
+                    navButton.style.height = '25%';
+                }
+                else {
+                    navList.style.display = 'flex';
+                    header.style.height = '25vh';
+                    navButton.style.height = '15%';
+                }
+            }
+        </script>
+
     </header>
+
     <main class="presentation">
         <section class="presentation__text">
             <section class="presentation__text__1">
@@ -33,14 +66,14 @@
                 <h2 class="presentation__text__links__text">Acesse minhas redes:</h2>
                 <a href="https://instagram.com/kauan_iasin" class="presentation__text__links__link"> <img
                         class="presentation__text__links__link__icon__insta" src="assets/icon_insta.png"
-                        alt="icon insta">Instagram</a>
+                        alt="icon instagram">Instagram</a>
                 <a href="https://WA.me/5511948675920" class="presentation__text__links__link">
                     <img class="presentation__text__links__link__icon__whats" src="assets/icon_whats.png"
-                        alt="icon whats"> Whatsapp</a>
+                        alt="icon whatsapp"> Whatsapp</a>
             </div>
         </section>
         <section class="presentation__img">
-            <img class="imgg" src="assets/kauanimg.jpeg" alt="foto de perfil kauan">
+            <img class="imgg" src="assets/logo1.jpg" alt="foto de perfil kauan">
         </section>
     </main>
     <footer class="rodape">
