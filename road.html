@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/road.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="/assets/logo.png" type="image/png">
+    <link rel="import" href="/header.html">
+    <title>Road Front-End</title>
+</head>
+
+<body>
+    <header id="header">
+        <section class="logo__container">
+            <a class="logo__container__anchor" href="index.html">
+                <img class="logo__img" src="/assets/logo.png" alt="logo Kauan Iasin desenvolvedor front-end">
+            </a>
+        </section>
+
+        <section id="navContainer" class="nav__container">
+
+            <button id="navButton" class="nav__button" onclick="clickMenu()">
+                <img class="nav__icon" src="/assets/menu_FILL0_wght400_GRAD200_opsz20.webp">
+            </button>
+
+            <nav id="navList" class="nav__list">
+                <a class="nav__item" href="index.html">Home</a>
+                <a class="nav__item" href="about.html">Sobre Mim</a>
+                <a class="nav__item" href="cv.html">Meu Portifólio</a>
+            </nav>
+
+        </section>
+
+        <script>
+            function clickMenu() {
+                if (navList.style.display == 'flex') {
+                    navList.style.display = 'none';
+                    header.style.height = '15vh';
+                    navButton.style.height = '25%';
+                }
+                else {
+                    navList.style.display = 'flex';
+                    header.style.height = '25vh';
+                    navButton.style.height = '15%';
+                }
+            }
+        </script>
+
+    </header>
+    <main>
+        <div class="presentation">
+            <h1 class="presentation__title"><strong>ROAD <br> <strong class="title__detail">FRONT-END</strong></strong>
+            </h1>
+            <p class="presentation__text">Uma rota de estudos <strong>front-end</strong> para quem precisa otimizar os
+                estudos de forma a não se perder no caminho, nem se jogando em um desafio muito maior do que imagina,
+                nem perdendo tempo aprendendo algo que não vai te tornar um verdadeiro <br> <strong>DEV
+                    FRONT-END</strong>
+            </p>
+        </div>
+
+        <section class="route">
+            <button class="route__button">
+                <p>TORNE-SE UM DEV FRONT-END</p>
+            </button>
+            <div class="route__content__1 inactive">
+                <div class="route__content">
+                    <a href="/iniciante.html"><h2 class="presentation__title route__content__options"><strong>INICIANTE</strong></h2></a>
+                    <a href="/intermediario.html"><h2 class="presentation__title route__content__options"><strong>INTERMEDIÁRIO</strong></h2></a>
+                    <a href="/avançado.html"><h2 class="presentation__title route__content__options"><strong>AVANÇADO</strong></h2></a>
+                </div>
+            </div>
+        </section>
+        <script src="/script/route.js"></script>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Kauan Iasin.
+        </p>
+    </footer>
+</body>
+
+</html>

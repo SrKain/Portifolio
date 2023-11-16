@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <section class="logo__container">
+            <a class="logo__container__anchor" href="index.html">
+                <img class="logo__img" src="/assets/logo.png" alt="logo Kauan Iasin desenvolvedor front-end">
+            </a>
+        </section>
+
+        <section id="navContainer" class="nav__container">
+
+            <button id="navButton" class="nav__button" onclick="clickMenu()">
+                <img class="nav__icon" src="/assets/menu_FILL0_wght400_GRAD200_opsz20.webp">
+            </button>
+
+            <nav id="navList" class="nav__list">
+                <a class="nav__item" href="index.html">Home</a>
+                <a class="nav__item" href="about.html">Sobre Mim</a>
+                <a class="nav__item" href="cv.html">Meu Portifólio</a>
+            </nav>
+
+        </section>
+
+        <script>
+            function clickMenu() {
+                if (navList.style.display == 'flex') {
+                    navList.style.display = 'none';
+                    header.style.height = '15vh';
+                    navButton.style.height = '25%';
+                }
+                else {
+                    navList.style.display = 'flex';
+                    header.style.height = '25vh';
+                    navButton.style.height = '15%';
+                }
+            }
+        </script>
+
+    </header>
+
+    <main>
+
+    </main>
+    
+    <footer class="rodape">
+        <p>Desenvolvido por Kauan Iasin.
+        </p>
+    </footer>
+</body>
+
+</html>

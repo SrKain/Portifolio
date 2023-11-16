@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bkg-color: linear-gradient(rgb(15, 24, 37) 0%, rgb(1, 10, 17) 62.08%)
+}
+
+body {
+    background: var(--bkg-color);
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation {
+    padding: 2% 1% 1% 1%;
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.presentation__title {
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.title__detail {
+    text-decoration: overline;
+}
+
+.presentation__text {
+    text-align: center;
+    font-family: 'montSerrat', sans-serif;
+    font-size: 1.3rem;
+    width: 90%;
+}
+
+
+.route {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 1.2em;
+}
+
+.route__button {
+    transition: all 200ms;
+    align-self: center;
+    padding: 3%;
+    width: 50vw;
+    font-size: 0.85rem;
+    font-family: 'montSerrat', sans-serif;
+    font-weight: 1000;
+    border-radius: 10px;
+    color: var(--secundary__color);
+    background-color: transparent;
+    border: solid 0.1px var(--tirdy__color);
+}
+
+.route__button:hover {
+    transition: all 200ms;
+    width: 60vw;
+    font-size: 1.4rem;
+    padding: 2.12%;
+}
+
+.inactive {
+    display: none;
+    transition: all 2000ms;
+}
+
+.active {
+    transition: all 2000ms;
+    display: flex;
+    flex-direction: column;
+}
+
+.route__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3em;
+    width: 70vw;
+    margin: 1em
+}
+
+.route__content__options {
+    text-decoration: underline;
+    color: var(--tirdy__color__variant);
+    font-size: 1.5rem;
+}
+
+@media (min-width: 751px) {
+
+    .presentation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 0.1px solid var(--tirdy__color__variant);
+        padding-bottom: 8%;
+    }
+
+    .presentation__title {
+        font-size: 3.5rem;
+    }
+
+    .route {
+        height: 40vh;
+    }
+
+    .route__button {
+        width: 40vw;
+        font-size: 1.5rem;
+        text-decoration: underline;
+    }
+
+    .route__button:hover {
+        width: 45vw;
+        font-size: 1.7rem;
+        padding: 1.5%;
+    }
+
+    .route__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 5%;
+    }
+
+    .route__content__options {
+        font-size: 1.5rem;
+    }
+
+    main {
+        height: 80vh;
+    }
+}
