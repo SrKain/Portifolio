@@ -17,6 +17,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: auto;
 }
 
 .presentation {
@@ -53,6 +54,7 @@ main {
     justify-content: center;
     text-align: center;
     margin: 1.2em;
+    height: 70vh;
 }
 
 .route__button {
@@ -67,13 +69,14 @@ main {
     color: var(--secundary__color);
     background-color: transparent;
     border: solid 0.1px var(--tirdy__color);
+    overflow-y: hidden;
 }
 
 .route__button:hover {
     transition: all 200ms;
-    width: 60vw;
+    width: 55vw;
     font-size: 1.4rem;
-    padding: 2.12%;
+    padding: 3.1%;
 }
 
 .inactive {
@@ -100,6 +103,8 @@ main {
     text-decoration: underline;
     color: var(--tirdy__color__variant);
     font-size: 1.5rem;
+    overflow-y: hidden;
+    padding: 0.1%;
 }
 
 @media (min-width: 751px) {
@@ -126,8 +131,8 @@ main {
     }
 
     .route__button:hover {
-        width: 45vw;
-        font-size: 1.7rem;
+        width: 42vw;
+        font-size: 1.6rem;
         padding: 1.5%;
     }
 
@@ -142,6 +147,6 @@ main {
     }
 
     main {
-        height: 80vh;
+        height: 90vh;
     }
 }
