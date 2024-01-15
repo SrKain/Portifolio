@@ -1,0 +1,5 @@
+.App {
+    background-image: linear-gradient(300deg, #000000, #000016);
+    max-width: 100vw;
+    box-sizing: border-box;
+}
